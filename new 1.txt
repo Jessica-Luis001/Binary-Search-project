@@ -1,0 +1,16 @@
+function checkPassword() {
+  var pw = document.getElementById("pw").value;
+  var dictionary = false;
+  for (var attack = 0; attack < wordsList.length; attack++) {
+    if (pw == wordsList[attack]) {
+      dictionary = true;
+    }
+  }
+  if (dictionary == true) {
+    document.getElementById("pw").innerHTML = "Password is not secure";
+}
+  else (dictionary == false) {
+    document.getElementById("pw").innerHTML = "Password is secure";
+  }
+  }
+}
